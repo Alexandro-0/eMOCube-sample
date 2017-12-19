@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ComputArt</string>
+
+    <string name="ble_device_not_fount">查無藍芽裝置</string>
+    <string name="scanned_list">已配對過的藍芽裝置</string>
+    <string name="new_list">新藍芽裝置</string>
+
+    <string name="main_title">藍芽連線</string>
+
+    <string name="refresh">重新搜尋</string>
+    <string name="close_ble_connection">中斷連線</string>
+    <string name="connecting">連線中...</string>
+
+    <string name="site_tx">中正堂前綠園道</string>
+    <string name="status_start_button">開始</string>
+    <string name="status_stop_button">停止</string>
+    <string name="status_close_button">關閉</string>
+    <string name="status_save_button">儲存</string>
+    <string name="status_slide_button">幻燈片</string>
+    <string name="status_restart_button">重新開始</string>
+    <string name="status_speedUp_button">加速</string>
+    <string name="status_lowDown_button">減速</string>
+    <string name="status_connected_tx">作品狀態：已連線</string>
+    <string name="status_start_tx">作品狀態：PLAY</string>
+    <string name="status_stop_tx">作品狀態：STOP</string>
+    <string name="status_save_tx">作品狀態：SAVE</string>
+    <string name="status_slide_tx">作品狀態：SLIDE</string>
+
+    <string name="not_connected">尚未連接任何裝置</string>
+
+    <string name="connect_button_tx">連接 ComputArt</string>
+</resources>

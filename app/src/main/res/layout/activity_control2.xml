@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.zerodimension.emocube.tech.zerodimension.emocube.ControlActivity2">
+
+    <TextView
+        android:id="@+id/deviceNameTx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/size_s"
+        android:layout_marginTop="@dimen/size_l"
+        android:text="@string/not_connected"
+        android:textColor="@color/red_500"
+        android:textSize="@dimen/sp_m" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/deviceNameTx"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/size_s">
+
+        <Button
+            android:id="@+id/connectBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cyan_500"
+            android:onClick="onConnectBle"
+            android:text="@string/connect_button_tx"
+            android:textColor="@color/white" />
+
+        <GridLayout
+            android:id="@+id/controlLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_s"
+            android:columnCount="3">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_s"
+                android:layout_marginTop="@dimen/size_s"
+                android:background="@color/orange_500"
+                android:onClick="onClickPlay"
+                android:text="@string/status_start_button"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_s"
+                android:layout_marginLeft="@dimen/size_xl"
+                android:layout_marginRight="@dimen/size_xl"
+                android:layout_marginTop="@dimen/size_s"
+                android:background="@color/orange_500"
+                android:onClick="onClickStop"
+                android:text="@string/status_stop_button"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_s"
+                android:layout_marginTop="@dimen/size_s"
+                android:background="@color/orange_500"
+                android:onClick="onClickClose"
+                android:text="@string/status_close_button"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_s"
+                android:layout_marginTop="@dimen/size_s"
+                android:background="@color/orange_500"
+                android:onClick="onClickSave"
+                android:text="@string/status_save_button"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_s"
+                android:layout_marginLeft="@dimen/size_xl"
+                android:layout_marginRight="@dimen/size_xl"
+                android:layout_marginTop="@dimen/size_s"
+                android:background="@color/orange_500"
+                android:onClick="onClickSlide"
+                android:text="@string/status_slide_button"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_s"
+                android:layout_marginTop="@dimen/size_s"
+                android:background="@color/orange_500"
+                android:onClick="onClickRestart"
+                android:text="@string/status_restart_button"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_s"
+                android:layout_marginTop="@dimen/size_s"
+                android:background="@color/orange_500"
+                android:onClick="onClickSpeedUp"
+                android:text="@string/status_speedUp_button"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_s"
+                android:layout_marginLeft="@dimen/size_xl"
+                android:layout_marginRight="@dimen/size_xl"
+                android:layout_marginTop="@dimen/size_s"
+                android:background="@color/orange_500"
+                android:onClick="onClickSlowDown"
+                android:text="@string/status_lowDown_button"
+                android:textColor="@color/white" />
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/statusTx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_l"
+            android:gravity="center"
+            android:textSize="@dimen/sp_m" />
+
+    </LinearLayout>
+</RelativeLayout>
